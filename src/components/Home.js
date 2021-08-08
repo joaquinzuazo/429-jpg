@@ -10,7 +10,7 @@ const Home = () =>{
                 className="your-class"
                 layers={[
                     {
-                        image: './images/Artemisa.jpg',
+                        image: './images/Ceremonia_1.jpg',
                         amount: 0.5,
                     }
                 ]}
@@ -26,7 +26,7 @@ const Home = () =>{
                 className="your-class"
                 layers={[
                     {
-                        image: './images/Alquimia.jpg',
+                        image: './images/Artemisa_3.jpg',
                         amount: 0.5,
                     }
                 ]}
@@ -35,14 +35,15 @@ const Home = () =>{
                 }}
             >
                 <div className='chumma'>
-                    <h1>Banner Children</h1>
+                    <h2>#productphoto</h2>
+                    <h1>ARTEMISA</h1>
                 </div>
             </ParallaxBanner>  
             <ParallaxBanner
                 className="your-class"
                 layers={[
                     {
-                        image: './images/Ceremonia.jpg',
+                        image: './images/Bruane_2.jpg',
                         amount: 0.5,
                     }
                 ]}
@@ -51,14 +52,15 @@ const Home = () =>{
                 }}
             >
                 <div className='chumma'>
-                    <h1>Banner Children</h1>
+                    <h1>- PORTFOLIO -</h1>
+                    <h2>Bruane</h2>
                 </div>
             </ParallaxBanner> 
             <ParallaxBanner
                 className="your-class"
                 layers={[
                     {
-                        image: './images/Alquimia.jpg',
+                        image: './images/Ceremonia_3.jpg',
                         amount: 0.5,
                     }
                 ]}
@@ -67,7 +69,8 @@ const Home = () =>{
                 }}
             >
                 <div className='chumma'>
-                    <h1>Banner Children</h1>
+                    <h1>- PORTFOLIO -</h1>
+                    <h2>Ceremonia del cacao</h2>
                 </div>
             </ParallaxBanner>  
         </ParallaxProvider>
