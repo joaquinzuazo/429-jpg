@@ -1,0 +1,62 @@
+*{
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
+.chumma {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+  
+.chumma h1 {
+  color: white;
+  font-size: 4vw;
+  font-weight: normal;
+}
+
+.header .navbar {
+  background-color: transparent !important;
+  color: #fff !important;
+}
+
+.header .navbar img {
+  width: 10% !important;
+}
+
+.navbar-menu{
+  display: block;
+}
+
+.navbar-menu-item{
+  margin: 0px 20px
+}
+
+.navbar-menu-item p:hover{
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+
+
+
+
+@media (min-Width: 760px){
+  .header .navbar img {
+    width: 5% !important;
+  }
+  
+}
+
+@media (min-Width: 992px){
+
+  .navbar-menu{
+    display: flex;
+  }
+  
+}
+
