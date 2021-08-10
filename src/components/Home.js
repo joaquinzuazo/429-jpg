@@ -1,16 +1,19 @@
 import React from 'react';
 import { ParallaxProvider, ParallaxBanner } from 'react-scroll-parallax';
+import {
+    Link
+  } from "react-router-dom";
 import MenuBoot from './MenuBoot'
+import Footer from './Footer'
 
 
 const Home = () =>{
     return(
         <ParallaxProvider>
             <ParallaxBanner
-                className="your-class"
                 layers={[
                     {
-                        image: './images/Ceremonia_1.jpg',
+                        image: '/images/Ceremonia_1.jpg',
                         amount: 0.5,
                     }
                 ]}
@@ -23,10 +26,9 @@ const Home = () =>{
                 </div>
             </ParallaxBanner>
             <ParallaxBanner
-                className="your-class"
                 layers={[
                     {
-                        image: './images/Artemisa_3.jpg',
+                        image: '/images/Artemisa_3.jpg',
                         amount: 0.5,
                     }
                 ]}
@@ -34,16 +36,17 @@ const Home = () =>{
                     height: '100vh',
                 }}
             >
-                <div className='chumma'>
-                    <h2>#productphoto</h2>
-                    <h1>ARTEMISA</h1>
+                <div className='text'>
+                    <Link to='/projects/Artemisa' >
+                        <h2> - PORTFOLIO -</h2>
+                        <h3>Artemisa</h3>
+                    </Link>
                 </div>
             </ParallaxBanner>  
-            <ParallaxBanner
-                className="your-class"
+            {/*<ParallaxBanner
                 layers={[
                     {
-                        image: './images/Bruane_2.jpg',
+                        image: '/images/Bruane_2.jpg',
                         amount: 0.5,
                     }
                 ]}
@@ -51,16 +54,29 @@ const Home = () =>{
                     height: '100vh',
                 }}
             >
-                <div className='chumma'>
-                    <h1>- PORTFOLIO -</h1>
-                    <h2>Bruane</h2>
+                <div className='text'>
+                    <Link to='/projects/Bruane' >
+                        <h2>- PORTFOLIO -</h2>
+                        <h3>Bruane</h3>
+                    </Link>
                 </div>
-            </ParallaxBanner> 
+            </ParallaxBanner> */}
+            <div className='home-text'>
+                <div className='home-text-title'> 
+                    429.JPG |
+                </div>
+                <div className='home-text-text'>
+                429 es un proyecto que nace de la pasión por la fotografía.
+                Nos especializamos en fotografía de producto, ayudándo para que tu emprendimiento se destaque entre los demás.<br />
+                Nuestro servicio está orientado a todo tipo de emprendimientos.
+                En nuestro porfolio conviven grandes y pequeños negocios de gastronomía hasta negocios de productos esotéricos.<br />
+                Cada ofício presenta un nuevo e interesante desafío a superar.
+                </div>
+            </div>
             <ParallaxBanner
-                className="your-class"
                 layers={[
                     {
-                        image: './images/Ceremonia_3.jpg',
+                        image: '/images/Ceremonia_3.jpg',
                         amount: 0.5,
                     }
                 ]}
@@ -68,11 +84,14 @@ const Home = () =>{
                     height: '100vh',
                 }}
             >
-                <div className='chumma'>
-                    <h1>- PORTFOLIO -</h1>
-                    <h2>Ceremonia del cacao</h2>
+                <div className='text'>
+                    <Link to='/projects/Ceremonia' >
+                        <h2>- PORTFOLIO -</h2>
+                        <h3>Ceremonia del cacao</h3>
+                    </Link>
                 </div>
             </ParallaxBanner>  
+            <Footer />
         </ParallaxProvider>
     )
 }
